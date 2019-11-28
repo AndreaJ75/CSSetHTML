@@ -1,0 +1,265 @@
+* 
+
+body
+{
+    margin : 0;
+    padding : 0;
+}
+
+.headServ{
+    padding: 0 20%; 
+    background-color : #b24a50;
+    color : #8c3034;
+    background-image : url("../img/bg-rouge.png");
+}
+
+.bodySaveSpot{
+    padding: 0 20%;
+    background-color: #F0EFEB;
+    color: black;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bodySharethem {
+    padding: 0 20%;
+    background-color: #E6E5DD;
+    color: black;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    color : white;
+    text-align: center;
+    margin-top:0%;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+h3 {
+    text-align: center;
+}
+h4{
+    margin-top: 0%;
+}
+
+p {
+    font-family: Raleway;
+    font-size: 14px;
+    color : white;
+    text-align: center; 
+    margin-bottom: 10%;
+    margin : 2%;
+}
+
+.textsavespot>p{
+    text-align: left;
+    margin : 0;
+    color: #575658;
+}
+
+.textsharethem>p{
+    color: #575658;
+    text-align: left;
+}
+
+.footServ{
+    background-image: url('../img/paris.jpg');
+    background-size: cover;
+    /* background-size:100% 100%; */
+    background-position : center center;
+    background-repeat : no-repeat;
+    padding: 0 20%;
+    height : 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet {
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+    border : solid;
+    width: 20%;
+    height: 10%;
+    margin : 10% 10%;
+    padding : 2% 1% 1% 1%;
+    
+ }
+ 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color : #b24a50;
+    
+}
+
+a:hover {
+    background-color: white;
+    margin-top : 3%;
+    margin-bottom: 3%;
+  }
+
+a{
+    color :  #8c3034;
+    font-weight: 700;
+    font-size: larger;
+    width: 16%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 20%;
+    justify-content: space-around;
+  
+   /* justify-content: space-between; */
+  }
+
+#home {
+    display: flex;
+    border: solid white;
+    background-color: white;
+    justify-content: center;
+  }
+#phone{
+    width: 100%;
+    height: 100%;
+    margin : 5%;
+}
+
+#savespot{
+    width: 100%;
+    height: 100%;
+    margin : 5%;
+}
+.intro{
+    margin : 0;
+    padding : 0;
+}
+
+.details{
+    display: flex;
+}
+.details>p{
+    margin : 2%;
+}
+
+.Research,
+.Design,
+.Dev,
+.Launch {
+    border : solid;
+    background-color: #c35058;
+    border-color: transparent;
+    width : 20%;
+    height : 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin : 2%;
+    align-items: center;
+    
+}
+
+#picResearch,
+#picDesign,
+#picDev,
+#picLaunch {
+    width : 70%;
+    height : 70%;
+    margin: 5% 2%;
+}
+
+
+@media screen and (max-width: 770px)
+{
+    nav {
+        margin-left: 10%;
+        height : 100px;
+        align-items: center;
+        margin-bottom: 0%;
+    }
+
+    nav>a {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .details{
+    
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        /* flex-wrap: wrap; */
+        padding: 0 20%;
+    }
+ 
+}
+
+@media screen and (max-width: 414px)
+{
+    header {
+        display: block;
+        /* justify-content: space-between; */
+        background-color : #b24a50;        
+    }
+    p {
+        font-size: 2vw;
+        font-size: 2vh;
+    }
+    nav {
+        margin-left: 10%;
+        height : 100px;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 0%;
+
+    }
+    #home{
+        margin-top: 2%;
+        padding: auto;
+        border-width: 0;
+    }
+    nav>a {
+        margin-top: 3%;
+        font-size: 2.25vh;
+        
+    }
+
+    .details{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Research,
+    .Design,
+    .Dev,
+    .Launch {
+        width : 90%;
+        height: 30%;
+        margin : 2%;
+    }
+    .Research>p,
+    .Design>p,
+    .Dev>p,
+    .Launch>p {
+        text-align: center;
+        width : 50%;
+        height: 20%;
+        margin : 2%;
+    }
+
+}
